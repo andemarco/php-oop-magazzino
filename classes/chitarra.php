@@ -4,8 +4,10 @@
     public $modello;
     public $anno;
     public $colore;
-    public $prezzo;
+    public $prezzobase;
     public $livello;
+    public $prezzo;
+
 
     //dati necessari per l'inserimento del prodotto
     public function __construct($_marca, $_modello, $_livello) {
@@ -14,13 +16,11 @@
     $this->livello = $_livello;
     }
     //calcolo il prezzo in base al livello dello strumento
-    public function calcPrice($_prezzo) {
-      if(empty($this->prezzo)) {
-        die('Non hai messo il prezzo');
-      }
-      return $this->prezzo * $_livello;
+    function calcPrice($a, $b): int {
+      $_prezzo = $a * $b;
+      return $this->prezzo = $_prezzo;
     }
-    //il livello deve essere un numero da 1 a 3
+    // il livello deve essere un numero da 1 a 3
 
     public function setLivello($_livello) {
       if(!is_int($_livello)) {
