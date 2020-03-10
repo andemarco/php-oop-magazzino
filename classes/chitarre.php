@@ -1,5 +1,5 @@
 <?php
-require 'classes/strumentimusicali.php';
+require_once "classes/strumentimusicali.php";
 
 class Chitarra extends StrumentiMusicali {
   public $tipologiaChitarra;
