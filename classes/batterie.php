@@ -1,6 +1,7 @@
 <?php
 require_once "classes/strumentimusicali.php";
 
+
 class Batteria extends StrumentiMusicali {
   public $tipologiaBatteria;
   public $numeroPezzi;
@@ -17,7 +18,8 @@ $pearl->anno = 2020;
 $pearl->colore = 'Nero';
 $pearl->prezzobase = 310;
 $pearl->livello = 1;
-$pearl-> calcPrice($pearl->prezzobase, $pearl->livello);
+
+
 
 
 // BATTERIA 2
@@ -30,7 +32,7 @@ $roland->anno = 2020;
 $roland->colore = 'Nero';
 $roland->prezzobase = 630;
 $roland->livello = 3;
-$roland-> calcPrice($roland->prezzobase, $roland->livello);
+
 
   var_dump($pearl);
   var_dump($roland);
