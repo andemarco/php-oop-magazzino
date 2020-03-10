@@ -1,5 +1,6 @@
 <?php
-  class Chitarra {
+  class StrumentiMusicali {
+    public $tipologiaStrumento;
     public $marca;
     public $modello;
     public $anno;
