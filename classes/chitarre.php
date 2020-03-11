@@ -11,27 +11,27 @@ class Chitarra extends StrumentiMusicali {
 
 
 // CHITARRA 1
-$strato = new Chitarra('Fender', 'Strato', 3);
+$strato = new Chitarra('Fender', 'Strato', 500);
 $strato->tipologiaStrumento = 'Chitarra';
 $strato->tipologiaChitarra = 'Chitarra elettrica';
 $strato->pickup = 'Humbucker';
 $strato->amplificatore= 'Non incluso';
 $strato->anno = 1980;
 $strato->colore = 'sunburst';
-$strato->prezzobase = 500;
-$strato->livello = 3;
-$strato->calcPrezzoScontato(20, 500);
+$strato->prezzo = 500;
+$strato->calcPrezzoStudenti($strato->prezzo, $_sconto);
 
 // CHITARRA 2
-$gibson = new Chitarra('Gibson', 'Les Paules', 3);
+$gibson = new Chitarra('Gibson', 'Les Paules', 800);
 $gibson->tipologiaStrumento = 'Chitarra';
 $gibson->tipologiaChitarra = 'Chitarra Semiacustica';
 $gibson->pickup = 'Doppio Humbucker';
 $gibson->amplificatore= 'Incluso';
 $gibson->anno = 1964;
 $gibson->colore = 'yellow';
-$gibson->prezzobase = 800;
-$gibson->livello = 3;
+$gibson->prezzo = 800;
+$gibson->calcPrezzoStudenti($gibson->prezzo);
+
 
 
 var_dump($strato);

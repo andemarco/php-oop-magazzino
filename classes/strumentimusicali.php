@@ -6,24 +6,24 @@
     public $modello;
     public $anno;
     public $colore;
-    public $prezzobase;
-    public $livello;
+    public $prezzo;
+
 
 
     //dati necessari per l'inserimento del prodotto
-    public function __construct($_marca, $_modello, $_livello) {
+    public function __construct($_marca, $_modello) {
     $this->marca = $_marca;
     $this->modello = $_modello;
-    $this->livello = $_livello;
+    $this->prezzo = $_prezzo;
     }
 
 
-    public function setLivello($_livello) {
-      if(!is_int($_livello)) {
+    public function setPrezzo($_prezzo) {
+      if(!is_int($_prezzo)) {
         die('non e un numero');
       }
 
-      $this->livello = $_livello;
+      $this->prezzo = $_prezzo;
     }
   }
 

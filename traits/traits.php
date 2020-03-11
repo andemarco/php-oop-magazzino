@@ -1,11 +1,10 @@
 <?php
 
 trait ScontoStudenti
-{   public $sconto;
-    public $prezzoScontato;
-    function calcPrezzoScontato($_sconto, $prezzo)
+{  public $prezzoStudenti;
+    function calcPrezzoStudenti($_prezzo)
     {
-      return $this->$prezzoScontato = ($prezzo * $_sconto)/100;
+      return $this->prezzoStudenti = $_prezzo -(($_prezzo * 15)/100);
 
     }
   }
